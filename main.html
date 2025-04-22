@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading" aria-level="1">My Portfolio</h1>
+        <nav role="navigation">
+            <ul>
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero">
+            <img role="img" src="profile.jpg" alt="A professional headshot of me">
+            <p>Hi, I'm [Your Name], a passionate [Your Profession] with a focus on [Your Key Skills/Areas of Expertise].</p>
+        </section>
+
+        <section id="about">
+            <h2 role="heading" aria-level="2">About Me</h2>
+            <p>A brief description of your background, skills, and interests. You can elaborate on your experience and what drives you.</p>
+        </section>
+
+        <section id="projects">
+            <h2 role="heading" aria-level="2">Projects</h2>
+            <ul role="list">
+                <li role="listitem">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of Project 1.</p>
+                    <a href="#">View Project</a>
+                </li>
+                <li role="listitem">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2.</p>
+                    <a href="#">View Project</a>
+                </li>
+                <li role="listitem">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of Project 3.</p>
+                    <a href="#">View Project</a>
+                </li>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2 role="heading" aria-level="2">Contact Me</h2>
+            <p>How can people reach you? Include contact information or a contact form here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 AccioJob</p>
+    </footer>
 </body>
-
 </html>
